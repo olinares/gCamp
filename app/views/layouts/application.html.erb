@@ -9,9 +9,10 @@
 <body>
 
 <!-- Nav Bar -->
+<div class="container-fixed">
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -34,20 +35,51 @@
   <div class="jumbotron">
     <h1>gCamp</h1>
     <p><p><p>Your life, organized.</p></p></p>
+
+</div>
+
+<div class="row" "container">
+  <div class="col-md-4"><%= image_tag "borland.jpg", class: 'img-responsive' %></div>
+  <div class="col-md-4"><%= image_tag "cowboy.jpg", class: 'img-responsive' %></div>
+  <div class="col-md-4"><%= image_tag "kap.jpg", class: 'img-responsive' %></div>
+  </div>
+<div class="row" "container">
+  <div class="col-md-4"><div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tasks</h3>
+    </div>
+    <div class="panel-body">
+      Grouped by projects and<br> lists. Just the way you<br>like'em.
+    </div>
+  </div>
+  </div>
+  <div class="col-md-4"><div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Documents</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>Upload</li>
+        <li>Comment</li>
+        <li>Revise</li>
+      </ul>
+    </div>
+  </div></div>
+
+  <div class="col-md-4"><div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Comments</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>Comment on tasks <br>and documents</li>
+        <li>Get email notifications</li>
+      </ul>
+    </div>
+  </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img data-src="holder.js/300x300" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+
 </body>
 </html>
