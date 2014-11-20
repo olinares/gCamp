@@ -49,10 +49,15 @@
       </div>
     </div>
   </div>
+  <div>
+    <% @quotes.each do |sub_quote| %>
+    <% sub_quote.each do |x| %>
+    <ul class="list-unstyled"><%= x %></ul>
+    <% end %>
+    <% end %>
+  </div>
+</div>
+
+
 </div>
 <ul>
-  <% quotes = ['"Failure is not an option. Everyone has to Succeed" - Arnold Schwargenegger', '"Your time is limited, so don\'t waste it living someone else\'s life." - Steve Jobs', '"Better Ingredients, Better Pizza" - Papa John'] %>
-  <% quotes.each do |quotes| %>
-  <li><%= quotes %></li>
-  <% end %>
-  <ul>
