@@ -12,4 +12,7 @@ class WelcomeController < ApplicationController
   end
   def terms
   end
+  def faq
+  end
+  
 end

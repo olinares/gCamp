@@ -1,24 +1,20 @@
-
 <!--Jumbotron -->
-
-<div class="jumbotron" >
+<div class="jumbotron">
   <h1>gCamp</h1>
   <p><p><p>Your life, organized.</p></p></p>
 </div>
-
 <div class="row" "container">
-
   <div class="col-md-4"><%= image_tag "faces.jpg", class: 'img-responsive' %></div>
   <div class="col-md-4"><%= image_tag "fire.jpg", class: 'img-responsive' %></div>
   <div class="col-md-4"><%= image_tag "protest.jpg", class: 'img-responsive' %></div>
 </div>
 <div style="padding-top: 20px; padding-bottom: 20px;">
   <div class="row" "container">
-    <div class="col-md-4"><div class="panel panel-info">
+    <div class="col-md-4" "panel panel-info"><div class="panel panel-info">
       <div class="panel-heading">
         <h3 class="panel-title">Tasks</h3>
       </div>
-      <div class="panel-body">
+      <div class="panel-body panel-height">
         Grouped by projects and<br> lists. Just the way you<br>like'em.
       </div>
     </div>
@@ -27,7 +23,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">Documents</h3>
     </div>
-    <div class="panel-body">
+    <div class="panel-body panel-height">
       <ul>
         <li>Upload</li>
         <li>Comment</li>
@@ -40,7 +36,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">Comments</h3>
     </div>
-    <div class="panel-body">
+    <div class="panel-body panel-height">
       <ul>
         <li>Comment on tasks <br>and documents</li>
         <li>Get email notifications</li>
@@ -48,7 +44,7 @@
     </div>
   </div>
 </div>
-<div>
+<div class="container">
   <% @quotes.each do |sub_quote| %>
   <% sub_quote.each do |x| %>
   <ul class="list-unstyled"><%= x %></ul>
@@ -56,4 +52,3 @@
   <% end %>
 </div>
 </div>
-<ul>
